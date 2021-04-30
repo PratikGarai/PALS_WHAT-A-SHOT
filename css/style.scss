@@ -15,12 +15,22 @@ section {
     bottom: 0;
     width: 60%;
 }
-.top {
+
+.odd {
     background-image: url('/assets/Wave_top.svg'), url('/assets/Wave_bottom.svg');
     background-size: 60%, 60%;
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
+}
 
+.even {
+    background-image: url('/assets/Flipped bottom.svg'), url('/assets/Flipped top.svg');
+    background-size: 60%, 60%;
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,5 +43,37 @@ section {
 
 .rday_timer {
     color: white;
-    font-size: 2em;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.reg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    // background: #ff1bb0;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,27,176,1) 28%);
+    letter-spacing: 2px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+  
+.social__icon {
+    width : 50px !important;
+    height: 50px;
+    margin: 0 10px;
 }
