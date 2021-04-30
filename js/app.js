@@ -1,4 +1,4 @@
-var countDownDate = new Date("May 02, 2021 10:00:00").getTime();
+var countDownDate = new Date("May 08, 2021 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -16,8 +16,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("rday_timer").innerHTML = days + " : " + hours + " : "
-  + minutes + " : " + seconds ;
+  document.getElementById("rday_timer").innerHTML = 
+  `<span>
+    <span class="number">${days}</span><span class="word">Days</span>
+    <span class="number">${hours}</span><span class="word">Hr</span>
+    <span class="number">${minutes}</span><span class="word">Min</span>
+    <span class="number">${seconds}</span><span class="word">Sec</span> 
+  </span>`;
     
   // If the count down is over, write some text 
   if (distance < 0) {
