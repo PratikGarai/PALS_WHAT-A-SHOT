@@ -55,7 +55,7 @@ section {
 }
 
 .social__icon {
-  width : 50px;
+  width : 50px !important;
   height: 50px;
   margin: 0 10px;
 }
