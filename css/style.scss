@@ -43,6 +43,8 @@ section.even {
 }
 
 .rday_timer {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 30px;
     margin: 30px 0 20px 0;
@@ -188,4 +190,136 @@ section.bottom > div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .rday_timer {
+        .number {
+            font-size: 60px;
+            margin-right: 10px;
+            margin-left : 15px;
+        }
+    
+        .word {
+            font-size: 36px;
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+    }
+
+    .txt {
+        margin-left: 60px;
+        font-size: 20px;
+    }
+
+    .upper {
+        flex: 0.8;
+    }
+
+    .upper img {
+        flex: 1.4;
+    }
+
+    .lower {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .top > img {
+        width: 60%;
+        margin-bottom: 60px;
+    }
+
+    .rday_timer {
+        margin: 30px 0;
+        width: 100%;
+        .number {
+            font-size: 30px;
+            margin-right: 10px;
+            margin-left : 0px;
+        }
+    
+        .word {
+            font-size: 15px;
+            margin-right: 10px;
+            margin-left: 0px;
+        }
+    }
+
+    .time {
+        width: 300px;
+    }
+    
+    .time.odd {
+        margin-right: 220px;
+    }
+    
+    .time.even {
+        margin-left: 220px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .top > img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .top {
+        padding: 20px;
+    }
+
+    .rday_timer {
+        margin: 60px;
+        width: 100%;
+    }
+
+    .time {
+        width: 250px;
+    }
+
+    .time.odd {
+        margin-right: 160px;
+    }
+    
+    .time.even {
+        margin-left: 160px;
+    }
+
+    .upper {
+        padding-top: 0px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .txt {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .upper img {
+        width: 100% !important;
+        flex: 1;
+    }
+
+    .lower {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .time {
+        width: 200px;
+    }
+
+    .time.odd {
+        margin-right: 160px;
+    }
+    
+    .time.even {
+        margin-left: 160px;
+    }
 }
