@@ -45,4 +45,18 @@ section {
   color: white;
   font-size: 2em;
 }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.social__icon {
+  width : 50px;
+  height: 50px;
+  margin: 0 10px;
+}
 /*# sourceMappingURL=style.css.map */
