@@ -12,6 +12,26 @@ section {
 
 .upper-wave {
     position: relative;
-    top: 0;
-    width: 90%;
+    bottom: 0;
+    width: 60%;
+}
+.top {
+    background-image: url('/assets/Wave_top.svg'), url('/assets/Wave_bottom.svg');
+    background-size: 60%, 60%;
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img {
+    width: 40%;
+}
+
+.rday_timer {
+    color: white;
+    font-size: 2em;
 }
